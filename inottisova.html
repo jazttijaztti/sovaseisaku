@@ -1,3 +1,133 @@
-V<!doctype html>
-<html>
-inottiです
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>      
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: sans-serif;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+            background: none;
+            border: none;
+            outline: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+            font-size: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>sova_git講義</h1>
+        <h2>gitのリナックスコマンド</h2>
+        <ul>
+            <li>
+                <div>
+                    <h3>git init</h3>
+                    <p><span>隠しファイル.git</span>がフォルダの中に生成される</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>ls -la</h3>
+                    <p>フォルダ内の<span>隠しファイルを表示</span></p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>git branch</h3>
+                    <p>自分で作成したbranchが表示され、現在選択中のbranchがわかる</p>
+                    <p>デフォルトでmasterやmainといったbranchがデフォルトで入っている</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>git branch x</h3>
+                    <p>"x"という名前のbranchを作成する</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>git add .</h3>
+                    <p>現在の<span>作業中のフォルダ全体を選択する<span></p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>git commit -am "x"</h3>
+                    <p>git add .で現在作業中のフォルダの<span>変更差分を現在選択中のbranchに同期する</span></p>
+                    <p>同期の際に、"x"というコメントを残す</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>git checkout x</h3>
+                    <p>"x"という名前のbranchに切り替える</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>git merge x</h3>
+                    <p>"x"という名前のbranchの変更差分を現在選択中のbranchに取り込む</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>git push origin x</h3>
+                    <p>現在選択中branchの変更差分を共同作業のフォルダに同期する</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>git pull origin x</h3>
+                    <p>共同作業を行なっているる別の人がpushした内容を現在自分の作業しているbrnchに同期する</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+    
+
+
+</body>
+</html>
